@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Enhancement</title>
+    <link rel="stylesheet" href="/static/styles/page1.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="px-[80px] w-full flex justify-between items-center h-full bg-[#160931] opacity-75 text-white font-semibold py-3"
+    >
+      <a href="homepage.html" class=""><h1 class="text-xl">Home</h1></a>
+      <div class="flex gap-4">
+        <a
+          href="page2.html"
+          class="text-sm px-3 py-2 hover:bg-[#6c40c5] rounded-xl border-solid border-black border"
+          >Bg Remover</a
+        >
+        <a
+          href="page3.html"
+          class="text-sm px-3 py-2 hover:bg-[#6c40c5] rounded-xl border-solid border-black border"
+          >Text to Img Convertor</a
+        >
+        <a
+          href="#"
+          class="text-sm px-3 py-2 hover:bg-[#6c40c5] rounded-xl border-solid border-black border"
+          >Sign In</a
+        >
+      </div>
+    </header>
+
+    <section
+      id="imageenhancer"
+      class="bg-red-300 frame px-[80px] w-full flex flex-col items-center justify-center gap-5 py-8"
+    >
+      <div class="flex flex-col items-center justify-center gap-3">
+        <h1 class="text3">Photo Enhancer</h1>
+        <p class="text4">
+          Our "Photo Enhancement" button stands as the gateway to a world of
+          visual transformation. <br />
+          Nestled on our homepage, this button beckons users to unlock the full
+          potential of their images.
+        </p>
+      </div>
+      <div
+        class="bg-[#6c40c566] p-8 rounded-xl flex flex-col items-center justify-center gap-3"
+      >
+        <p class="text-white text-xl">Click here to upload your image</p>
+
+        <div class="choose-file-wrapper text-white">
+          <input type="file" id="image-input" />
+          <button id="enhance-btn" class="px-3 py-2 rounded-xl">
+            Enhance Image
+          </button>
+        </div>
+      </div>
+      <div class="adjustment-controls w-1/3">
+        <div class="flex gap-5 items-center px-4 py-2">
+          <label for="brightness-range" style="color: white">Brightness</label>
+          <input
+            type="range"
+            id="brightness-range"
+            class="slider w-full"
+            style="color: white"
+          />
+        </div>
+        <br />
+        <div class="flex gap-5 items-center px-4 py-2">
+          <label for="contrast-range" style="color: white">Contrast</label>
+          <input
+            type="range"
+            id="contrast-range"
+            class="slider w-full"
+            style="color: white"
+          />
+        </div>
+      </div>
+      <p class="text-xl text-white font-semibold">Output Image</p>
+      <!-- Add ID for enhance button -->
+      <canvas id="output-canvas"></canvas>
+      <!-- Add ID for output canvas -->
+      <a
+        id="downloadEnhancerImage"
+        class="download-button"
+        download="enhanced_image.png"
+        >Download</a
+      >
+    </section>
+    <div
+      class="bg-[#EEEEEE] w-full flex flex-col gap-4 justify-between py-8 px-[80px]"
+    >
+      <h1 class="text-3xl font-bold text-[#2900CE] text-center">
+        How to Enhance a Photo?
+      </h1>
+      <div class="w-full flex justify-evenly">
+        <div
+          class="flex flex-col gap-7 items-center justify-center bg-[#E4E9FF] px-4 py-2 rounded-xl drop-shadow-xl"
+        >
+          <span class="text-xl font-semibold">1. Upload your Image</span>
+          <img
+            class="w-[80px] h-[80px] rounded-xl"
+            src="/static/assets/icon1.png"
+            alt="image13"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-7 items-center justify-center bg-[#E4E9FF] px-4 py-2 rounded-xl drop-shadow-xl"
+        >
+          <span class="text-xl font-semibold"
+            >2. Perform Image Enhancement</span
+          >
+          <img
+            class="w-[80px] h-[80px] rounded-xl"
+            src="/static/assets/icon2.png"
+            alt="image14"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-7 items-center justify-center bg-[#E4E9FF] px-4 py-2 rounded-xl drop-shadow-xl"
+        >
+          <span class="text-xl font-semibold">3. Download and Share</span>
+          <img
+            class="w-[80px] h-[80px] rounded-xl"
+            src="/static/assets/icon3.png"
+            alt="image15"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full flex flex-col px-[80px] py-8 bg-[#0D0315] text-white gap-8"
+    >
+      <div class="flex items-center justify-between h-full">
+        <h1 class="text-4xl font-bold text15">Smart Imager</h1>
+        <div class="flex gap-8">
+          <p class="text-xl">Company</p>
+          <p class="text-xl">Support</p>
+          <p class="text-xl">Platform</p>
+        </div>
+      </div>
+      <footer class="text-sm">
+        &copy; 2024 Smart Imager. All rights reserved.
+      </footer>
+    </div>  
+    <script src="/static/scripts/script2.js"></script>
+  </body>
+</html>

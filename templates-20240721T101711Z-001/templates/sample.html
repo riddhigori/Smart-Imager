@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="script" href="script.js">
+  <title>Background Remover & Text-to-Image Converter</title>
+</head>
+
+<body>
+  <header>
+    <h1>Smart Imager</h1>
+  </header>
+
+  <main>
+     <section id="imageenhancer">
+      <h2>Image Enhancer</h2>
+      <div class="image-container">
+        <input type="file" id="image-input">
+        <button id="enhance-btn">Enhance Image</button>
+      </div>
+      <div>
+        <label for="brightness-range">Brightness:</label>
+        <input type="range" id="brightness-range" min="-100" max="100" value="0">
+      </div>
+      <div>
+        <label for="contrast-range">Contrast:</label>
+        <input type="range" id="contrast-range" min="-100" max="100" value="0">
+      </div>
+      <canvas id="output-canvas"></canvas>
+      <a id="downloadEnhancerImage" class="download-button" download="enhanced_image.png">Download</a>
+    </section>
+
+    <section id="backgroundRemover">
+      <h2>Background Remover</h2>
+      <div class="upload-container">
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="removeBackground()">Remove Background</button>
+      </div>
+      <div id="outputImageContainer" class="output-container" style="display: none;">
+        <h3>Result</h3>
+        <img id="outputImage" alt="Background Removed Image">
+        <a id="downloadOutputImage" class="download-button" download="background_removed_image.png">Download</a>
+      </div>
+    </section>
+
+    <section id="textToImageConverter">
+      <h2>Text-to-Image Converter</h2>
+      <div class="text-container">
+        <textarea id="textInput" placeholder="Enter text"></textarea>
+        <button onclick="convertToImage()">Convert to Image</button>
+      </div>
+      <div id="textToImageContainer" class="output-container" style="display: none;">
+        <h3>Result</h3>
+        <img id="textToImage" alt="Text to Image">
+        <a id="downloadTextToImage" class="download-button" download="text_to_image.png">Download</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Image Toolbox</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

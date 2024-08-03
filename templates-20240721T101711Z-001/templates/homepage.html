@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/styles/homepage.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Enhancement Toolbox</title>
+  </head>
+  <body>
+    <header
+      class="header px-[80px] w-full flex justify-between items-center h-full bg-[#380A2F] opacity-75 text-white font-semibold py-3"
+    >
+      <a href="homepage.html" class=""><h1 class="text-xl">Home</h1></a>
+      <div class="flex gap-4">
+        <a
+          href="page1.html"
+          class="text-sm px-3 py-2 hover:bg-[#91327e] rounded-xl border-solid border-black border"
+          >Image Enhancement</a
+        >
+        <a
+          href="page2.html"
+          class="text-sm px-3 py-2 hover:bg-[#91327e] rounded-xl border-solid border-black border"
+          >Bg Remover</a
+        >
+        <a
+          href="login.html"
+          class="text-sm px-3 py-2 hover:bg-[#91327e] rounded-xl border-solid border-black border"
+          >Sign In</a
+        >
+      </div>
+    </header>
+    <div
+      class="px-[80px] py-20 header h-full text-black flex flex-col items-center justify-center gap-8"
+    >
+      <div class="w-full h-full flex items-center justify-between gap-4">
+        <div class="flex flex-col items-start gap-4 w-full">
+          <div class="text-white">
+            <h1 class="text-5xl font-bold">Image Enhancement AI</h1>
+          </div>
+          <div class="">
+            <p class="text-lg font-normal text-white opacity-70">
+              Elevate your Visuals, Ignite your Impact
+            </p>
+          </div>
+        </div>
+        <div class="relative w-full h-[318px]">
+          <img
+            src="/static/assets/image1.jpg"
+            alt="Image 1"
+            class="absolute w-64 top-0 left-[100px]"
+          />
+          <img
+            src="/static/assets/image2.jpg"
+            alt="Image 2"
+            class="absolute w-64 top-[40px] left-[250px]"
+          />
+          <img
+            src="/static/assets/image3.jpg"
+            alt="Image 3"
+            class="absolute w-64 top-[80px] left-[80px]"
+          />
+          <img
+            src="/static/assets/image4.jpg"
+            alt="Image 4"
+            class="absolute w-64 top-[120px] left-[300px]"
+          />
+        </div>
+        <!-- <a href="page1.html"><button class=" p-3 rounded-xl border-solid border-2 border-blue-200">Upload Image</button></a> -->
+      </div>
+      <div class="flex flex-col items-center justify-center gap-4">
+        <div class="text-white">
+          <p class="text-xl font-normal">Special Features</p>
+        </div>
+        <div class="flex gap-7 w-full">
+          <a href="page1.html"
+            ><button class="p-3 rounded-xl bg-[#EC26D8] text-3xl text-white font-bold">
+              Image Enhancer
+            </button></a
+          >
+          <a href="page2.html"
+            ><button class="p-3 rounded-xl bg-[#EC26D8] text-3xl text-white font-bold">
+              Background Remover
+            </button></a
+          >
+          <a href="page3.html"
+            ><button class="p-3 rounded-xl bg-[#EC26D8] text-3xl text-white font-bold">
+              Text to Image Converter
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full bg-[#0D0213] px-[80px] text-white py-8">
+      <div class="flex w-full flex-col gap-8">
+        <h1 class="text-[#F20E97] text-center text-4xl font-bold">
+          Our Services
+        </h1>
+        <div class="flex gap-4 items-center justify-center">
+          <div class="flex flex-col gap-4 items-center justify-center w-1/3">
+            <img
+              src="/static/assets/image5.jpg"
+              alt="Image 5"
+              class="w-[340px] rounded-xl drop-shadow-xl"
+            />
+            <p class="textbg text-2xl font-bold">Super-Resolution</p>
+            <span class="text-sm text-center"
+              >Enhance the resolution and quality of images, allowing for
+              clearer and more detailed visuals</span
+            >
+          </div>
+          <div class="flex flex-col gap-4 items-center justify-center w-1/3">
+            <img
+              src="/static/assets/image6.jpg"
+              alt="Image 5"
+              class="w-[340px] rounded-xl drop-shadow-xl"
+            />
+            <p class="textbg text-2xl font-bold">Color Correction</p>
+            <span class="text-sm text-center"
+              >Adjust and balance the colors in images to ensure accurate
+              representation and vibrant tones</span
+            >
+          </div>
+          <div class="flex flex-col gap-4 items-center justify-center w-1/3">
+            <img
+              src="/static/assets/image7.jpg"
+              alt="Image 5"
+              class="w-[340px] rounded-xl drop-shadow-xl"
+            />
+            <p class="textbg text-2xl font-bold">Image Retouching</p>
+            <span class="text-sm text-center"
+              >Improve the overall appearance of images by removing
+              imperfections, blemishes, and other unwanted elements</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-full flex justify-between gap-5 frame3 text-white px-[80px] py-8"
+    >
+      <div>
+        <img
+          src="/static/assets/image8.jpg"
+          alt="Photo Enhancement"
+          class="rounded-xl w-[458px] drop-shadow-[0_135px_135px_rgba(126, 77, 229,0.80)]"
+        />
+      </div>
+      <div class="flex flex-col items-start justify-center gap-3 w-2/3">
+        <h1 class="text-4xl font-bold">
+          Enhance your images with Smart Imager
+        </h1>
+        <p class="text-md opacity-70 w-3/4">
+          Unleash the full potential of your cherished memories with our
+          state-of-the-art photo enhancement services. Whether it's restoring
+          faded family portraits, refining wedding snapshots, or adding that
+          perfect touch to your vacation pictures, we're here to turn your
+          visions into stunning reality.
+        </p>
+        <a href="page1.html"
+          ><button class="px-5 py-3 button1 hover:button1-hover rounded-xl font-bold">
+            Photo Enhancer
+          </button></a
+        >
+      </div>
+    </div>
+    <div
+      class="w-full flex justify-between gap-5 frame3 text-white px-[80px] py-8"
+    >
+      <div class="flex flex-col items-end justify-center gap-3 w-2/3">
+        <h1 class="text-4xl font-bold">
+          Easy Background Removal with Smart Imager
+        </h1>
+        <p class="text-md opacity-70 text-end w-3/4">
+          Our cutting-edge background removal service employs advanced
+          algorithms and skilled professionals to ensure precision and accuracy,
+          delivering exceptional results for a wide range of purposes, from
+          e-commerce product listings to portrait photography and beyond.
+          Elevate your visuals and make them truly stand out with our expert
+          background removal services.
+        </p>
+        <a href="page2.html"
+          ><button class="px-5 py-3 button1 hover:button1-hover rounded-xl font-bold">
+            Background Removal
+          </button></a
+        >
+      </div>
+      <div>
+        <img
+          src="/static/assets/image9.jpg"
+          alt="Photo Enhancement"
+          class="rounded-xl w-[458px] drop-shadow-[0_135px_135px_rgba(126, 77, 229,0.80)]"
+        />
+      </div>
+    </div>
+    <div
+      class="w-full flex justify-between gap-5 frame3 text-white px-[80px] py-8"
+    >
+      <div>
+        <img
+          src="/static/assets/image10.png"
+          alt="Photo Enhancement"
+          class="rounded-t-xl w-[458px] drop-shadow-[0_135px_135px_rgba(126, 77, 229,0.80)]"
+        />
+        <img
+          src="/static/assets/image16.png"
+          alt="Photo Enhancement"
+          class="rounded-b-xl w-[458px] drop-shadow-[0_135px_135px_rgba(126, 77, 229,0.80)]"
+        />
+      </div>
+      <div class="flex flex-col items-start justify-center gap-3 w-2/3">
+        <h1 class="text-4xl font-bold">
+          Convert your Texts into Images using Smart Imager
+        </h1>
+        <p class="text-md opacity-70 w-3/4">
+          You can now easily convert your texts into images. Watch your
+          imagination taking shape and creating a perfect image for you.
+        </p>
+        <a href="page3.html"
+          ><button class="px-5 py-3 button1 hover:button1-hover rounded-xl font-bold">
+            Text to Image Converter
+          </button></a
+        >
+      </div>
+    </div>
+    <div
+      class="bg-[#EEEEEE] w-full flex flex-col gap-4 justify-between py-8 pb-16 px-[80px]"
+    >
+      <h1 class="text-3xl font-bold text-[#2900CE] text-center py-8">
+        How to Edit and Enhance your Images with Smart Imager?
+      </h1>
+      <div class="w-full flex justify-evenly">
+        <div
+          class="flex flex-col gap-7 items-center justify-center bg-[#E4E9FF] px-4 py-2 rounded-xl drop-shadow-xl"
+        >
+          <span class="text-xl font-semibold">1. Upload your Image</span>
+          <img
+            class="w-[80px] h-[80px] rounded-xl"
+            src="/static/assets/icon1.png"
+            alt="image13"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-7 items-center justify-center bg-[#E4E9FF] px-4 py-2 rounded-xl drop-shadow-xl"
+        >
+          <span class="text-xl font-semibold"
+            >2. Perform Image Enhancement</span
+          >
+          <img
+            class="w-[80px] h-[80px] rounded-xl"
+            src="/static/assets/icon2.png"
+            alt="image14"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-7 items-center justify-center bg-[#E4E9FF] px-4 py-2 rounded-xl drop-shadow-xl"
+        >
+          <span class="text-xl font-semibold">3. Download and Share</span>
+          <img
+            class="w-[80px] h-[80px] rounded-xl"
+            src="/static/assets/icon3.png"
+            alt="image15"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full flex flex-col px-[80px] py-8 bg-[#0D0315] text-white gap-8"
+    >
+      <div class="flex items-center justify-between h-full">
+        <h1 class="text-4xl font-bold text15">Smart Imager</h1>
+        <div class="flex gap-8">
+          <p class="text-xl">Company</p>
+          <p class="text-xl">Support</p>
+          <p class="text-xl">Platform</p>
+        </div>
+      </div>
+      <footer class="text-sm">
+        &copy; 2024 Smart Imager. All rights reserved.
+      </footer>
+    </div>
+
+    <script src="/static/scripts/script2.js"></script>
+  </body>
+</html>

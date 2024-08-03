@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Image</title>
+    <link rel="stylesheet" href="/static/styles/page3.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="px-[80px] w-full flex justify-between items-center h-full bg-[#380A2F] opacity-75 text-white font-semibold py-3"
+    >
+      <a href="homepage.html" class=""><h1 class="text-xl">Home</h1></a>
+      <div class="flex gap-4">
+        <a
+          href="page1.html"
+          class="text-sm px-3 py-2 hover:bg-[#91327e] rounded-xl border-solid border-black border"
+          >Image Enhancement</a
+        >
+        <a
+          href="page2.html"
+          class="text-sm px-3 py-2 hover:bg-[#91327e] rounded-xl border-solid border-black border"
+          >Bg Remover</a
+        >
+        <a
+          href="#"
+          class="text-sm px-3 py-2 hover:bg-[#91327e] rounded-xl border-solid border-black border"
+          >Sign In</a
+        >
+      </div>
+    </header>
+    <div class="background px-[80px]">
+      <div class="flex flex-col items-center gap-5">
+        <div class="flex flex-col items-center text-center">
+          <span class="text5">Image Generator</span>
+          <span class="text6"
+            >This serves as a gateway to a transformative visual experience.
+            <br />
+            When clicked, this dynamic tool harnesses the power of language to
+            bring your ideas to life in vivid imagery.</span
+          >
+        </div>
+        <input
+          type="text"
+          id="textInput"
+          class="input-box"
+          placeholder="Describe what you want in your words"
+        />
+        <button class="generate-btn" onclick="convertToImage()">
+          Generate
+        </button>
+      </div>
+
+      <div
+        id="textToImageContainer"
+        style="display: none"
+        class=" pt-3  justify-center  flex flex-col items-center justify-center"      >
+        <img id="textToImage" alt="Generated Image" />
+        <button
+          class="px-3 py-2 rounded-md bg-[#380A2F] hover:bg-[#91327e]"
+          onclick="downloadImage()"
+        >
+          Download
+        </button>
+      </div>
+    </div>
+
+    <div class="w-full background2 relative">
+      <img src="/static/assets/image16.png" alt="" />
+      <div
+        class="h-full w-full absolute top-0 flex flex-col items-center justify-start pt-3 text-white opacity-1 z-10"
+      >
+        <span class="font-bold text-xl">Prompt</span>
+        <span class="text-md">Cute magical flying dog, fantasy art</span>
+      </div>
+      <div  class="h-full w-full absolute top-0 flex flex-col items-center justify-center bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,rgba(0,0,0,0.80)_0%,rgba(255,255,255,0.00)_100%)] "></div>
+    </div>
+    <div
+      class="w-full flex flex-col px-[80px] py-8 bg-[#380A2F] text-white gap-8"
+    >
+      <div class="flex items-center justify-between h-full ">
+        <h1 class="text-4xl font-bold ">Smart Imager</h1>
+        <div class="flex gap-8">
+          <p class="text-xl">Company</p>
+          <p class="text-xl">Support</p>
+          <p class="text-xl">Platform</p>
+        </div>
+      </div>
+      <footer class="text-sm">
+        &copy; 2024 Smart Imager. All rights reserved.
+      </footer>
+    </div>
+    <!-- <div class="frame7">
+        <h1 class="text15">Smart Imager</h1>
+        <p class="text16">Company    Support Platform</p>
+        <footer class="footer">&copy; 2024 Smart Imager. All rights reserved.</footer>
+    </div> -->
+
+    <script src="/static/scripts/script.js"></script>
+  </body>
+</html>
